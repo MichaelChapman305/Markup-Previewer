@@ -1,0 +1,34 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  color: #414141; }
+
+.mark-down-container h1 {
+  text-align: center; }
+.mark-down-container .mark-down-text {
+  height: 47em;
+  width: 35em;
+  padding-left: 2em;
+  padding-top: 1em;
+  overflow: overlay;
+  border: none;
+  outline: none;
+  overflow: scroll;
+  box-shadow: 1px 1px 15px 0px rgba(128, 128, 128, 0.55);
+  font-size: .8em; }
+
+.output-container {
+  margin-left: 10em; }
+  .output-container h1 {
+    text-align: center; }
+  .output-container .output {
+    height: 39em;
+    width: 28em;
+    padding-left: 2em;
+    overflow: overlay;
+    overflow: scroll;
+    box-shadow: 1px 1px 15px 0px rgba(128, 128, 128, 0.55); }
+
+/*# sourceMappingURL=style.css.map */
