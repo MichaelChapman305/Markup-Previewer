@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import marked from 'marked';
 
-export default class OutPut extends Component {
+export default class Output extends Component {
 	render() {
 		return (
 			<div className="output-container">
@@ -14,6 +14,6 @@ export default class OutPut extends Component {
 	}
 }
 
-OutPut.propTypes = {
+Output.propTypes = {
 	markup: PropTypes.func.isRequired
 }

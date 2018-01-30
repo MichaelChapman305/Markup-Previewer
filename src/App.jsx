@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import marked from 'marked';
 
-import MarkDown from './MarkDown.jsx';
-import OutPut from './OutPut.jsx';
+import Markdown from './Markdown.jsx';
+import Output from './Output.jsx';
 
 class App extends Component{
   constructor(props) {
@@ -24,20 +24,15 @@ class App extends Component{
   }
 
   markup() {
-    let markup = marked(this.state.text, {sanitize: true});
+    const markup = marked(this.state.text, {sanitize: true});
     return { __html: markup };
   }
 
   render() {
   	return (
   	  <div className="main">
-  	    <MarkDown 
-        text={this.state.text}
-        textChange={this.textChange}
-        />
-        <OutPut
-          markup={this.markup}
-        />
+  	    <Markdown text={this.state.text} textChange={this.textChange} />
+        <Output markup={this.markup} />
   	  </div>
   	);
   }

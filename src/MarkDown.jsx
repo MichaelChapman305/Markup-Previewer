@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
-export default class MarkDown extends Component {
+export default class Markdown extends Component {
 	render() {
 		return (
 			<div className="mark-down-container">
@@ -18,7 +18,7 @@ export default class MarkDown extends Component {
 	}
 }
 
-MarkDown.propTypes = {
+Markdown.propTypes = {
 	text: PropTypes.string.isRequired,
 	textChange: PropTypes.func.isRequired
 }
